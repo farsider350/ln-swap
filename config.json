@@ -1,0 +1,12 @@
+{
+  "bitcoin_rpc": {
+    "user": "bitcoinrpcuser",
+    "password": "bitcoinrpcpass",
+    "host": "127.0.0.1",
+    "port": 8332
+  },
+  "cln_cli_path": "/usr/bin/lightning-cli",
+  "onchain_confirmations": 1,
+  "swap_fee_percent": 0.005,
+  "min_btc_sats": 10000
+}
