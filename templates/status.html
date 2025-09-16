@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+<head><title>Swap Status</title></head>
+<body>
+  <h1>Swap #{{ swap.id }} Status</h1>
+  <p>Lightning Invoice: {{ swap.ln_invoice }}</p>
+  <p>On‑chain Address: {{ swap.onchain_address }}</p>
+  <p>Expected amount (sats): {{ swap.expected_sats }}</p>
+  <p>Fee (sats): {{ swap.fee_sats }}</p>
+  <p>Status: {{ swap.status }}</p>
+  {% if swap.txid %}
+    <p>On‑chain TXID: {{ swap.txid }}</p>
+  {% endif %}
+  {% if swap.ln_payment_txid %}
+    <p>Lightning Payment TXID/Hash: {{ swap.ln_payment_txid }}</p>
+  {% endif %}
+</body>
+</html>
